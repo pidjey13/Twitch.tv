@@ -1,0 +1,132 @@
+body {
+  font-family: "Georgia", sans-serif;
+  background: url(https://images.techhive.com/images/article/2017/02/twitch-logo-100710727-orig.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.sidebar-nav {
+  position: absolute;
+  width: 220px;
+}
+
+.sidebar-nav li {
+  width: 50%;
+  display: inline-block;
+}
+
+.sidebar-nav li:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  -webkit-transition: width 0.1s ease-in;
+  -moz-transition: width 0.1s ease-in;
+  -ms-transition: width 0.1s ease-in;
+  transition: width 0.1s ease-in;
+}
+
+.sidebar-nav li:nth-child(1):before {
+  background-color: #000000;
+}
+
+.sidebar-nav li:nth-child(2):before {
+  background-color: #6aad53;
+}
+
+.sidebar-nav li:nth-child(3):before {
+  background-color: #de0b0b;
+}
+
+.sidebar-nav li a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 10px 0 10px 32%;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus {
+  color: #ddd;
+  background-color: transparent;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+  visibility: visible;
+  width: 100%;
+  -webkit-transition: width 0.1s ease-in;
+  -moz-transition: width 0.1s ease-in;
+  -ms-transition: width 0.1s ease-in;
+  transition: width 0.1s ease-in;
+}
+
+.cornice {
+  background-color: #42165e;
+  border: 6px solid #0c0412;
+  opacity: 0.95;
+  filter: alpha(opacity=90);
+  padding: 12px;
+  margin: 0.5%;
+  max-width: 640px;
+  min-height: 350px;
+  width: 100%;
+  float: left;
+  border-radius: 8px;
+}
+
+.tv {
+  min-height: inherit;
+  background-size: cover;
+  border: 1px groove grey;
+  border-radius: 18px;
+}
+
+.img-circle {
+  width: 150px;
+  height: 150px;
+  margin: 3px 0 0 3px;
+  border: 2px solid #94a9ff;
+}
+
+.img-circle:hover {
+  border: 5px solid #e4e7f5;
+}
+
+#followers {
+  margin: 30px;
+  font-size: 20px;
+  text-align: center;
+  float: right;
+  color: whitesmoke;
+  text-shadow: 1px 0 #750000, 1px 0 #750000, 1px 0 #750000, 1px 0 #750000;
+}
+
+#fakeSpace {
+  margin: 1.2em auto;
+}
+
+footer {
+  padding: 0.4% 1% 0;
+  text-align: center;
+  color: gray;
+  background-color: #ededed;
+  bottom: 0;
+  position: fixed;
+  min-width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .cornice {
+    width: 49%;
+  }
+  .img-circle {
+    width: 30%;
+    height: 30%;
+  }
+}
