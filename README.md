@@ -1,4 +1,4 @@
-# Javascript Calculator
+# Twitch.TV
 FreeCodeCamp Project
 
 ## Dependecies
